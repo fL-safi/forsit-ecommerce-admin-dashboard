@@ -1,0 +1,592 @@
+// app global css in SCSS form
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/english/inter/Inter-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/english/montserrat/Montserrat-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .mainLayoutPadding {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .markerprofileheading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+  }
+  
+
+.drawerlogotext {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+  }
+  
+  .drawerItem {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .drawerItemactive {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .draweractiveitem {
+    background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+    border-radius: 0px 16px 16px 0;
+  }
+  
+  .draweractivecurve {
+    position: relative;
+  }
+  
+  .draweruperactivecurve {
+    position: absolute;
+    top: -58%;
+    left: -24px;
+    width: 30px;
+    height: 11px;
+    background: #FF5106;
+    color: rgb(15, 15, 15);
+    border: 0px solid #000000;
+  
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+  }
+  
+  .draweruperactivecurve::before {
+    content: "";
+    position: absolute;
+    right: 37px;
+    top: -44px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: white 35px 35px 0px 10px;
+    pointer-events: none;
+  }
+  
+  .drawerloweractivecurve {
+    position: absolute;
+    top: 73%;
+    left: -26px;
+    width: 30px;
+    height: 30px;
+    background: #FF5106;
+    color: rgb(15, 15, 15);
+    border: 0px solid #000000;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+  }
+  
+  .drawerloweractivecurve::before {
+    content: "";
+    position: absolute;
+    right: 35px;
+    top: -8px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: white 35px 35px 0px 10px;
+    pointer-events: none;
+  }
+  
+  
+  .notificationcard {
+    box-shadow: 4px 2px 16px -4px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+  }
+  
+  .markingStatustitleheading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  
+  .markingStatustitledetails {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+  
+  .markingtimedetails {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+  }
+  
+  .markingday {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+  }
+  
+  .totalmarkingcard {
+    width: 320px;
+    height: 170px;
+    background: rgba(255, 192, 133, 0.5);
+    border-radius: 16px;
+    margin-top: 16px;
+  }
+  
+  .markingstatspercent {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 120%;
+    background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding-left: 5px;
+  }
+  
+  .totalmarkingstatsheading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #707070;
+  }
+  
+  .totalmarkingstatsheadingnumber {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #404040;
+  }
+  
+  .markingSummaryContainer {
+    display: flex;
+    flex-wrap: wrap
+  }
+  
+  .selfassesmentcard {
+    width: 320px;
+    height: 170px;
+    background: #FFCAB3 !important;
+    backdrop-filter: blur(8px);
+    opacity: 0.9;
+    border-radius: 16px;
+    margin-top: 16px;
+  }
+  
+  .markeravailabilitytext {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  
+  .markeravailabilitycontainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .markeravailibilitycard {
+    width: 320px;
+    height: 100px;
+    background: rgba(255, 192, 133, 0.5);
+    border-radius: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+  
+  }
+  
+  
+  .markerSectionTags {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    padding: 13px 20px;
+    color: #FFFFFF;
+    background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  
+  .markerSectionTagsInActive {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    padding: 13px 19px;
+    border: 0px solid #707070;
+    color: #707070;
+    background: #EBEBEB;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  
+  .tomarkexamcardcontainer {
+    width: 80%;
+  }
+  
+  .tomarkexamcard {
+    background: #FFFFFF;
+    box-shadow: 4px 2px 16px -4px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 16px 4px 0px 0px;
+  }
+  
+  .markexambutton {
+    background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+    border-radius: 24px;
+    padding: 6px 24px;
+    gap: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    border: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  .tomarkexamcardheading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  
+  .tomarkexamcardtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  
+  .markingpagequestion {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  
+  .markingpageanswertext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+  
+  
+  .markinganswercontainer {
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px -3px rgba(0, 0, 0, 0.15);
+  }
+  
+  .markinganswerchip {
+    width: 80px;
+    background: #F1F1F1;
+    border-radius: 12px;
+  }
+  
+  .markinganswerchip span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 5px 10px;
+    background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .markermarkingheadertext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+  }
+  
+  .markermarkingsubheadertext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  
+  .markingpagelayout {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 2px 16px -4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+  }
+  
+  .markerprofilename {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .markerprofileemail {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+  }
+  
+  .markerprofileheading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+  }
+  
+  .markerprofilesubheading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  
+  .markerprofileseperator {
+    width: 70%;
+  }
+  
+  .examlisttabs .q-tab--active .q-tab__indicator {
+    opacity: 0;
+  }
+  
+  .examlisttabs .q-tab--inactive .q-tab__label {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    padding: 13px 19px;
+    border: 0px solid #707070;
+    color: #707070;
+    background: #EBEBEB;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+
+
+  // Product listing styling
+
+  .product-lists-container{
+    width: 100%;
+    // height: 100vh;
+    background-color: #ffc30a66;
+    margin: 16px 0px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .product-list-container-header{
+    font-family: 'Montserrat';
+    font-size: 32px;
+  }
+
+
+  .product-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 16px;
+    background-color: #fff8b2e6;
+  }
+
+  .product-title{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .product-description{
+    font-family: 'Inter';
+    font-size: 16px;
+  }
+
+  .product-details-header{
+    font-family: 'Inter';
+    font-size: 14px;
+
+  }
+
+  .product-details-content{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+
+  }
+
+  .product-details{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stock-status{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .stock-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.refining-products{
+  display: flex;
+}
+
+.inventry-setup-card {
+  width: 320px;
+  height: 100px;
+  background: #ffc30a66;
+  border-radius: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+
+}
+
+.stock-and-revenue-category-container{
+  display: flex;
+}
+.stock-count-chart{
+  width: 490px;
+  background-color: #eaeaeaa1;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+.stock-comparison-chart-heading{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.revenue-by-category{
+  width: 490px;
+  background-color: #eaeaeaa1;
+  border-radius: 16px;
+}
+
+.revenue-by-catgeory-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  color: #707070;
+}
+
+.revenue-by-catgeory-value{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  background: linear-gradient(128.55deg, #FF5106 16.54%, #A40894 143.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.sales-and-revenue-area-chart-container{
+  width: 996px;
+  background-color: #eaeaeaa1;
+  border-radius: 16px;
+}
